@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dish Diary</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../components/header/header.css">
+    <?php if(basename($_SERVER['PHP_SELF']) == 'home.php'){ ?>
+        <link href="../../pages/home/home.css" rel="stylesheet" media="all"/>
+    <?php } 
+        elseif(basename($_SERVER['PHP_SELF']) == 'recipes.php'){
+    ?>
+        <link href="../../pages/recipes/recipes.css" rel="stylesheet" media="all"/>
+    <?php } 
+        elseif(basename($_SERVER['PHP_SELF']) == 'favorites.php'){
+    ?>
+        <link href="../../pages/favorites/favorites.css" rel="stylesheet" media="all"/>
+    <?php } 
+        elseif(basename($_SERVER['PHP_SELF']) == 'profile.php'){
+    ?>
+        <link href="../../pages/profile/profile.css" rel="stylesheet" media="all"/>
+    <?php } 
+        elseif(basename($_SERVER['PHP_SELF']) == 'landingPage.php'){
+    ?>
+        <link href="../../pages/landingPage/landingPage.css" rel="stylesheet" media="all"/>
+    <?php } ?>
 </head>
 <body>
     <header class="border-bottom mb-4">
@@ -35,5 +53,10 @@
                 </div>
             </div>
         <?php endif; ?>
+    <?php
+        // Echo or print the current page name
+        echo "Current Page: $current_page";
+        echo "Style: $css_file";
+    ?>
     </header>
     <main>
