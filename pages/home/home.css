@@ -29,3 +29,13 @@ body {
     border-radius: 50%;
     background-color: #ccc;
 }
+
+footer {
+    background-color: #C84C02;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
