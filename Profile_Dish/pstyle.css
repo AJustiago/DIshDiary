@@ -1,0 +1,230 @@
+body{
+    background-color: #f9f6f2;
+}
+
+.pcontainer {
+    display: flex;
+    margin: 50px 10px;
+}
+
+.profile {
+    flex: .8;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.profile-header{
+    display: flex;
+    margin-left: 15px;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.profile-text-pcontainer{
+    margin-top: 10px;
+    line-height: .5;
+}
+
+.profile-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.profile-email {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.menu{
+    margin: 0 20px;
+}
+
+.menu-link{
+    display: block;
+    text-decoration: none;
+    color: #997676;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.menu-link:first-child{
+    color: #fff;
+    background-color: #CC733D;
+}
+
+.menu-link:hover {
+    background-color: #f1f5f9;
+    color: #3b1e20;
+}
+
+.menu-link:first-child:hover {
+    background-color: #CC733D;
+    color: #fff;
+}
+
+.account {
+    flex: 2;
+    margin-left: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: max-content;
+    border-radius: 5px;
+}
+
+.account-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #997676;
+}
+
+.account-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #3b211e;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.btn-pcontainer {
+    margin-right: 5px;
+}
+
+.btn-cancel {
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #997676;
+    border-radius: 2em;
+    color: #3b211e;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #fff;
+    transition-duration: .3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel:hover{
+    background-color: #f1f5f9;
+}
+
+.btn-save{
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #ad3506;
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #C84C02;
+    transition-duration: .3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-save:hover {
+    background-color: #CC6F37;
+}
+
+.account-edit{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-pcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.input-pcontainer label{
+    font-family: "Poppins", sans-serif;
+    color: #997676;
+    font-size: 14px;
+}
+
+.input-pcontainer input{
+    height: 25px;
+    border: 1.5px solid #997676;
+    border-radius: 5px;
+    padding: 5px;
+    color: #997676;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-pcontainer input:focus{
+    outline: none;
+    border: 1.5px solid #C84C02;
+}
+
+.input-pcontainer textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1.5px solid #997676;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #997676;
+}
+
+.input-pcontainer textarea:focus{
+    outline: none;
+    border: 1.5px solid #C84C02;
+}
+
+@media screen and (max-width: 768px) {
+    .pcontainer{
+        flex-direction: column;
+    }
+
+    .profile{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .account{
+        margin: 0;
+    }
+
+    .account-header{
+        flex-direction: column;
+    }
+
+    .account-edit{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .input-pcontainer{
+        margin: 10px;
+    }
+
+    .input-pcontainer input{
+        margin-right: 10px;
+    }
+
+    .input-pcontainer textarea{
+        display: block;
+        width: auto;
+        margin-right: 10px;
+    }
+}
+
