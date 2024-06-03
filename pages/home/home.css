@@ -71,7 +71,7 @@ body{
 .card-title {
     color: black;
     margin: 0;
-    word-wrap: break-word; /* Menambahkan ini agar title dapat wrapping */
+    word-wrap: break-word;
 }
 
 .card-body {
@@ -87,8 +87,8 @@ body{
     padding: 0.25em 0.5em;
     border-radius: 0.25em;
     font-size: 0.875em;
-    flex-shrink: 0; /* Agar label tidak mengecil */
-    white-space: nowrap; /* Mencegah label terpotong dan memastikan tetap dalam satu baris */
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 .ml-2 {
     margin-right: .5em;
@@ -110,7 +110,7 @@ h3,h5{
 }
 
 .d-flex.align-items-center.mb-2.flex-wrap {
-    flex-wrap: wrap; /* Menambahkan ini agar elemen bisa membungkus ketika ruang tidak cukup */
+    flex-wrap: wrap;
 }
 
 .card-img-top-wrapper {
@@ -119,13 +119,13 @@ h3,h5{
 
 .fav-icon {
     position: absolute;
-    top: 25px; /* Mengatur margin atas */
-    right: 25px; /* Mengatur margin kanan */
+    top: 25px; 
+    right: 25px; 
     color: #fff;
     font-size: 24px;
     cursor: pointer;
     transition: color 0.3s;
-    z-index: 1; /* Menentukan kedalaman tumpukan, sehingga ikon hati tumpuk di atas gambar */
+    z-index: 1; 
 }
 
 .fav-icon.favorited {
