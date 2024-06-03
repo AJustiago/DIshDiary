@@ -1,6 +1,7 @@
+/* Template */
+
 body {
     font-family: 'Lato', sans-serif;
-    color: rgba(200, 76, 2, 0.75);
     background-color: #fff;
 }
 
@@ -32,10 +33,108 @@ body {
 
 footer {
     background-color: #C84C02;
-    color: #fff;
     padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
+
+/* End Of Template */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f6f2;
+}
+
+.card-img-top{
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px;
+}
+.card{
+    border-radius: 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card-head{
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title {
+    color: black;
+    margin: 0;
+    word-wrap: break-word; /* Menambahkan ini agar title dapat wrapping */
+}
+
+.card-body {
+    padding: 25px;
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    background-color: #17a2b8;
+    color: white;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    font-size: 0.875em;
+    flex-shrink: 0; /* Agar label tidak mengecil */
+    white-space: nowrap; /* Mencegah label terpotong dan memastikan tetap dalam satu baris */
+}
+.ml-2 {
+    margin-right: .5em;
+}
+.btn-primary{
+    font-size: small;
+    border-radius: 20px;
+    width: 210px;
+    border-color: #C84C02;
+    background-color: #C84C02;
+}
+.btn-primary:hover{
+    border-color: #C84C02;
+    background-color: #D5B6A3;
+}
+
+h3,h5{
+    color: #C84C02;
+}
+
+.d-flex.align-items-center.mb-2.flex-wrap {
+    flex-wrap: wrap; /* Menambahkan ini agar elemen bisa membungkus ketika ruang tidak cukup */
+}
+
+.card-img-top-wrapper {
+    position: relative;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 25px; /* Mengatur margin atas */
+    right: 25px; /* Mengatur margin kanan */
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 1; /* Menentukan kedalaman tumpukan, sehingga ikon hati tumpuk di atas gambar */
+}
+
+.fav-icon.favorited {
+    color: red;
+}
+
+.fav-icon:hover {
+    color: red;
+}
+
+
+
