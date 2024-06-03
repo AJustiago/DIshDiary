@@ -7,9 +7,12 @@
         </div>
         <div class="col-lg-6">
             <div class="input-group">
-                <input class="form-control mr-sm-2 rounded" type="search" placeholder="Search recipe" aria-label="Search">
+                <input class="form-control rounded-left" type="search" placeholder="Search recipe" aria-label="Search">
                 <div class="input-group-append">
-                    <a class="btn btn-primary my-2 my-sm-0 rounded" href="../../pages/add-recipes/add-recipes.php">Add New</a>
+                    <span class="input-group-text bg-white border-left-0 rounded">
+                        <i class="fa fa-search"></i>
+                    </span>
+                    <a class="btn btn-primary my-2 my-sm-0 ml-2 rounded-right" href="../../pages/add-recipes/add-recipes.php">Add New</a>
                 </div>
             </div>
         </div>
