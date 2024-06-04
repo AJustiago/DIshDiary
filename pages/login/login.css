@@ -1,0 +1,64 @@
+body, html {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.col-6 {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bg-img {
+    background-image: url('../../assets/img/login-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+}
+
+.form-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #C84C02;
+    margin-top: 0; /* Remove any default margin */
+    margin-bottom: 20px; /* Add some space below the heading */
+    position: relative;
+    top: 30px; /* Move the heading up by 30px */
+}
+
+.color-primary {
+    color: #C84C02;
+}
+
+.form-control {
+    background-color: #EEEEEE !important;
+    color: #a3a3a3 !important;
+    border: none !important;
+    height: 100%; /* Fill the height of the container */
+}
+
+.btn-login {
+    width: 150px;
+    height: 40px;
+    border-radius: 0 !important;
+    background-color: #C84C02 !important;
+}
+
+a {
+    color: #C84C02 !important;
+}
