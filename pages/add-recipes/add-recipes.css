@@ -31,6 +31,62 @@ body {
     background-color: #ccc;
 }
 
+.form-control{
+    border: 1.5px solid #997676;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 1.5px solid #C84C02;
+}
+
+.form-check-input[type="radio"] {
+    accent-color: #C84C02; 
+}
+
+.btn-cancel {
+    width: 10em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #997676;
+    border-radius: 2em;
+    color: #3b211e;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #fff;
+    transition-duration: .3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel:hover{
+    background-color: #997676;
+    color: black;
+    border: none;
+}
+
+.btn-save{
+    width: 10em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #ad3506;
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #C84C02;
+    transition-duration: .3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-save:hover {
+    background-color: #CC6F37;
+    border: none;
+}
+
 footer {
     background-color: #C84C02;
     padding: 20px 0;
