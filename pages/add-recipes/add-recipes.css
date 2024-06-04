@@ -31,6 +31,18 @@ body {
     background-color: #ccc;
 }
 
+footer {
+    background-color: #C84C02;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* End Of Template */
+
+
 .form-control{
     border: 1.5px solid #997676;
     border-radius: 5px;
@@ -86,14 +98,3 @@ body {
     background-color: #CC6F37;
     border: none;
 }
-
-footer {
-    background-color: #C84C02;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-/* End Of Template */

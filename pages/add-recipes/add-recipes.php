@@ -17,6 +17,7 @@
                     <input type="text" class="form-control" id="nameInput" placeholder="Enter Name">
                 </div>
                 <div class="mb-3 col-6 pt-2">
+                    <!-- Navigation mw diganti sesuai sama tampilan -->
                     <label for="difficultySelect" class="form-label">Difficulty: </label>
                     <select class="form-select" id="difficultySelect">
                         <option value="beginner">Beginner</option>
@@ -70,6 +71,7 @@
         </div>
     </div>
     <div class="row"> 
+        <!-- Button Blom di ganti -->
         <div class="col-12 d-flex justify-content-end my-4">
             <a type="button" class="btn btn-primary mx-4" href="../../pages/recipes/recipes.php">Cancel</a>
             <button type="button" class="btn btn-outline-primary">Save & Publish</button>
