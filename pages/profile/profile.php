@@ -12,7 +12,7 @@
             <a href="#" class="menu-link"><i class="fa-solid fa-circle-user menu-icon"></i>Account</a>
             <a href="#" class="menu-link"><i class="fa-solid fa-bell menu-icon"></i>Notification</a>
             <a href="#" class="menu-link"><i class="fa-solid fa-gear menu-icon"></i>Setting</a>
-            <a href="#" class="menu-link"><i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</a>
+            <a href="../../pages/login/login.php" class="menu-link"><i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</a>
         </div>
     </div>
 
