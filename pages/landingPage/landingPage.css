@@ -1,13 +1,14 @@
 /* Template */
 
-body {
+body, html {
     font-family: 'Lato', sans-serif;
     background-color: #fff;
-    background-image: url('../../assets/img/landing-page-bg.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
+    background-image: url('../../assets/img/landing-page-bg.svg');
+    overflow: hidden;
 }
 
 .nav-link {
@@ -43,4 +44,29 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+header {
+    background-color: white;
+}
+
+/* End of Template */
+.wrapper {
+    flex-grow: 1; /* Make wrapper grow to take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #C84C02;
+    font-size: 60pt;
+    font-weight: bold;
 }
