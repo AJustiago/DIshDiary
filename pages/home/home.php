@@ -1,8 +1,8 @@
 <?php include '../../components/header/header.php'; ?>
-<div class="container py-5">
-        <h1 class="text-center mb-4">Popular Dishes</h1>
+<div class="py-5 mx-5">
+        <h1 class="text-center mb-5">Popular Dishes</h1>
 
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
 
             <div class="col">
                 <div class="card">
@@ -18,7 +18,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit molestias dolores sequi a unde obcaecati repellendus impedit veritatis.</p>
                     </div>
                     <div class="d-flex justify-content-around mb-5">
-                        <button class="btn btn-primary">View Recipe</button>
+                        <a class="btn btn-primary" href="../../pages/detail-recipes/detail-recipes.php">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit molestias dolores sequi a unde obcaecati repellendus impedit veritatis.</p>
                     </div>
                     <div class="d-flex justify-content-around mb-5">
-                        <button class="btn btn-primary">View Recipe</button>
+                        <a class="btn btn-primary" href="../../pages/detail-recipes/detail-recipes.php">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit molestias dolores sequi a unde obcaecati repellendus impedit veritatis.</p>
                     </div>
                     <div class="d-flex justify-content-around mb-5">
-                        <button class="btn btn-primary">View Recipe</button>
+                        <a class="btn btn-primary" href="../../pages/detail-recipes/detail-recipes.php">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit molestias dolores sequi a unde obcaecati repellendus impedit veritatis.</p>
                     </div>
                     <div class="d-flex justify-content-around mb-5">
-                        <button class="btn btn-primary">View Recipe</button>
+                        <a class="btn btn-primary" href="../../pages/detail-recipes/detail-recipes.php">View Recipe</a>
                     </div>
                 </div>
             </div>           

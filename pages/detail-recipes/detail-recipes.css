@@ -1,0 +1,43 @@
+/* Template */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+}
+
+.nav-link {
+    color: rgba(200, 76, 2, 0.75);
+    fill-opacity: 75%;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #C84C02;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #C84C02;
+}
+
+.title {
+    font-size: 24px;
+    color: #C84C02;
+}
+
+.profile-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #C84C02;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* End Of Template */
