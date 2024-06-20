@@ -41,7 +41,7 @@
     
 </head>
 <body>
-    <header class="border-bottom mb-4">
+    <header class="border-bottom">
     <?php
         $current_page = basename($_SERVER['PHP_SELF']);
         if ($current_page == 'landingPage.php'): ?>
@@ -51,7 +51,7 @@
                     <a href="" class="nav-link">F&Q</a>
                 </div>
                 <div class="nav-right d-flex align-items-center">
-                    <a href="" class="nav-link">Login</a>
+                    <a href="../../pages/login/login.php" class="nav-link">Login</a>
                 </div>
             </div>
         <?php else: ?>
