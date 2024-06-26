@@ -3,7 +3,7 @@
 <div class="py-5 mx-5">
     <div class="row">
         <div class="col-6">
-            <div id="imagePreview" class="mb-3" style="height: 500px; width: 100%; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+            <div id="imagePreview" class="mb-3" style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;">
                 <img id="imageDisplay" src="../../assets/img/beef_wellington.jpeg" class="img-fluid" style="max-height: 500px; max-width: 100%; display: block; object-fit: contain;" alt="Selected Image">
             </div>
         </div>
@@ -19,14 +19,15 @@
                 </div>
             </div>
             <div class="mb-3">
-                <textarea class="form-control" id="recipeDescription" rows="13" placeholder="Enter recipe description" readonly>hidangan klasik yang memadukan kelezatan daging sapi dengan keanggunan puff pastry. Hidangan ini terdiri dari potongan daging sapi filet mignon yang empuk, dilapisi dengan campuran jamur cincang (duxelles) dan prosciutto, kemudian dibungkus dalam lapisan puff pastry yang renyah dan dipanggang hingga keemasan. Setiap gigitan menawarkan perpaduan tekstur dan rasa yang tak tertandingi. pilihan sempurna untuk acara-acara istimewa atau makan malam yang mewah. Sajikan dengan saus Madeira atau red wine untuk pengalaman kuliner yang lebih memuaskan.</textarea>
+                <span>
+                hidangan klasik yang memadukan kelezatan daging sapi dengan keanggunan puff pastry. Hidangan ini terdiri dari potongan daging sapi filet mignon yang empuk, dilapisi dengan campuran jamur cincang (duxelles) dan prosciutto, kemudian dibungkus dalam lapisan puff pastry yang renyah dan dipanggang hingga keemasan. Setiap gigitan menawarkan perpaduan tekstur dan rasa yang tak tertandingi. pilihan sempurna untuk acara-acara istimewa atau makan malam yang mewah. Sajikan dengan saus Madeira atau red wine untuk pengalaman kuliner yang lebih memuaskan.</span>
             </div>
             <div class="row mb-3">
                 <div class="col-3">
                     <label for="totalTime" class="form-label">Total Time</label>
                 </div>
                 <div class="col-6">
-                    <input type="text" class="form-control" id="time" placeholder="Total Time" readonly value="1.5 hours, plus chilling">
+                    <span>1.5 hours, plus chilling</span>
                 </div>
             </div>
             <div class="row mb-3">
@@ -34,7 +35,7 @@
                     <label for="category" class="form-label">Category</label>
                 </div>
                 <div class="col-6">
-                    <input type"text" class="form-control" id="category" readonly value="Main Dish">
+                    <span>Main Dish</span>
                 </div>
             </div>
         </div>
@@ -72,7 +73,7 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <h3 class="card-title" style="font-weight: bold;">Guiness Pig</h3>
-                                        <div class="bg-danger rounded ">
+                                        <div class="bg-danger rounded px-2 mx-3">
                                             Expert
                                         </div>
                                     </div>

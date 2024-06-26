@@ -17,7 +17,6 @@
                     <input type="text" class="form-control" id="nameInput" placeholder="Enter Name">
                 </div>
                 <div class="mb-3 col-6 pt-2">
-                    <!-- Navigation mw diganti sesuai sama tampilan -->
                     <label for="difficultySelect" class="form-label">Difficulty: </label>
                     <select class="form-select" id="difficultySelect">
                         <option value="beginner">Beginner</option>
@@ -61,17 +60,26 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 my-4">
+        <div class="col-6 my-4"  id="ingredientsContainer">
             <h2 style="border-bottom: 4px solid #C84C02;">Ingredients</h2>
-            <textarea class="form-control" id="ingredients" rows="16" placeholder="Enter Ingredients"></textarea>
+            <div class="row mb-3">
+                <div class="col-10">
+                    <input type="text" class="form-control" id="ingredients" placeholder="Enter Ingredients">
+                </div>
+                <button type="button" class="btn btn-primary col-1 add-ingredients"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
         </div>
-        <div class="col-6 my-4">
+        <div class="col-6 my-4" id="directionsContainer">
             <h2 style="border-bottom: 4px solid #C84C02;">Directions</h2>
-            <textarea class="form-control" id="directions" rows="16" placeholder="Enter Directions"></textarea>
+            <div class="row mb-3">
+                <div class="col-10">
+                    <input type="text" class="form-control" id="directions" placeholder="Enter Directions">
+                </div>
+                <button type="button" class="btn btn-primary col-1 add-directions"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
         </div>
     </div>
     <div class="row"> 
-        <!-- Button Blom di ganti -->
         <div class="col-12 d-flex justify-content-end my-4">
             <a type="button" class="btn btn-primary mx-4" href="../../pages/recipes/recipes.php">Cancel</a>
             <button type="button" class="btn btn-outline-primary">Save & Publish</button>
@@ -108,6 +116,70 @@
             imageDisplay.style.display = 'none';
             defaultBoxText.style.display = 'block';
         }
+    });
+
+    document.querySelector('.add-ingredients').addEventListener('click', function() {
+        const ingredientsContainer = document.getElementById('ingredientsContainer');
+
+        const newRow = document.createElement('div');
+        newRow.className = 'row mb-3';
+
+        const newCol = document.createElement('div');
+        newCol.className = 'col-10';
+        const newInput = document.createElement('input');
+        newInput.type = 'text';
+        newInput.className = 'form-control';
+        newInput.placeholder = 'Enter Ingredients';
+        newCol.appendChild(newInput);
+
+        const newButtonCol = document.createElement('div');
+        newButtonCol.className = 'col-1';
+        const newButton = document.createElement('button');
+        newButton.type = 'button';
+        newButton.className = 'btn btn-danger remove-ingredient px-3';
+        newButton.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
+        newButtonCol.appendChild(newButton);
+
+        newRow.appendChild(newCol);
+        newRow.appendChild(newButtonCol);
+
+        ingredientsContainer.appendChild(newRow);
+
+        newButton.addEventListener('click', function() {
+            ingredientsContainer.removeChild(newRow);
+        });
+    });
+
+    document.querySelector('.add-directions').addEventListener('click', function() {
+        const directionsContainer = document.getElementById('directionsContainer');
+
+        const newRow = document.createElement('div');
+        newRow.className = 'row mb-3';
+
+        const newCol = document.createElement('div');
+        newCol.className = 'col-10';
+        const newInput = document.createElement('input');
+        newInput.type = 'text';
+        newInput.className = 'form-control';
+        newInput.placeholder = 'Enter Directions';
+        newCol.appendChild(newInput);
+
+        const newButtonCol = document.createElement('div');
+        newButtonCol.className = 'col-1';
+        const newButton = document.createElement('button');
+        newButton.type = 'button';
+        newButton.className = 'btn btn-danger remove-directions px-3';
+        newButton.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
+        newButtonCol.appendChild(newButton);
+
+        newRow.appendChild(newCol);
+        newRow.appendChild(newButtonCol);
+
+        directionsContainer.appendChild(newRow);
+
+        newButton.addEventListener('click', function() {
+            directionsContainer.removeChild(newRow);
+        });
     });
 </script>
 

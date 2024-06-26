@@ -41,7 +41,7 @@
     
 </head>
 <body>
-    <header class="border-bottom mb-4">
+    <header class="border-bottom">
     <?php
         $current_page = basename($_SERVER['PHP_SELF']);
         if ($current_page == 'landingPage.php'): ?>

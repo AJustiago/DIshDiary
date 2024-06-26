@@ -3,7 +3,7 @@
 <div class="py-5 mx-5">
     <div class="row">
         <div class="col-lg-6">
-            <h1 class="text-left mb-4">My Recipes</h1>
+            <h1 class="text-left mb-4">My Favorite</h1>
         </div>
         <div class="col-lg-6">
             <div class="input-group">
@@ -12,12 +12,12 @@
                     <span class="input-group-text bg-white border-left-0 rounded">
                         <i class="fa fa-search"></i>
                     </span>
-                    <a class="btn btn-primary my-2 my-sm-0 ml-2 rounded-right" href="../../pages/add-recipes/add-recipes.php">Add New</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-4 g-4 mb-5"> 
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
         <div class="col">
             <div class="card">
                 <div class="card-img-top-wrapper">
