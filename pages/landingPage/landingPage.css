@@ -1,13 +1,14 @@
 /* Template */
 
-body {
+body, html {
     font-family: 'Lato', sans-serif;
     background-color: #fff;
-    background-image: url('../../assets/img/landing-page-bg.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
+    background-image: url('../../assets/img/landing-page-bg.svg');
+    overflow: hidden;
 }
 
 .nav-link {
@@ -43,4 +44,69 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+header {
+    background-color: white;
+}
+
+/* End of Template */
+.full-height {
+    height: 100vh;
+}
+.judul {
+    color: #C84C02;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-judul {
+    font-size: 50px;
+}
+
+.sub-judul2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.sub-color {
+    color: rgba(200, 76, 2, 0.75);
+}
+
+.btn-black {
+    color: white;
+    font-size: 40px;
+    background-color: black !important;
+    width: 340px;
+    border-radius: 50px;
+}
+
+.text-center {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#circle1 {
+    position: absolute;
+    bottom: -300px;
+    right: -300px;
+    width: 600px;
+    height: 600px;
+    background-color: #C84C02; /* Adjust the color as needed */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+#circle2 {
+    position: absolute;
+    bottom: -350px; /* Adjust position as needed */
+    right: 150px; /* Adjust position as needed */
+    width: 430px;
+    height: 430px;
+    background-color: #C84C02; /* Adjust the color as needed */
+    border-radius: 50%;
+    z-index: 0;
 }

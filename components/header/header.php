@@ -51,7 +51,7 @@
                     <a href="" class="nav-link">F&Q</a>
                 </div>
                 <div class="nav-right d-flex align-items-center">
-                    <a href="" class="nav-link">Login</a>
+                    <a href="../../pages/login/login.php" class="nav-link">Login</a>
                 </div>
             </div>
         <?php else: ?>
