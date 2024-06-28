@@ -19,12 +19,14 @@ body, html {
 }
 
 .bg-img {
-    background-image: url('../../assets/img/login-bg.svg');
+    background-image: url('../../assets/img/bg1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
 }
+
+@keyframescha
 
 .form-container {
     max-width: 500px;
